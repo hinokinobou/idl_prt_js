@@ -120,7 +120,7 @@ var onShowChallengedMissionLogListPages = function( mission_id ){
         
         // $('#ChallengedMissionLogListView').append('<li><h2>' + mission_log_name + '</h2><p>' + mission_log_detail + '</p></li>');
     
-        $('#ChallengedMissionLogListView').append('<li><h2>' + date_dic['h'] + ':' + date_dic['i'] + ' ' + mission_log_name + '</h2></li>');
+        $('#ChallengedMissionLogListView').append('<li><img src="images/icon-mike.png" class="ui-li-icon"><h2>' + date_dic['h'] + ':' + date_dic['i'] + ' ' + mission_log_name + '</h2></li>');
         
         // debug( 'mission_log_detail.length');
         // debug( mission_log_detail.length );
