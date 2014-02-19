@@ -63,7 +63,7 @@ var onShowNotChallengeMissionListPages = function(){
     }
     
    
-    $.mobile.changePage("#NotChallengeMissionListPage");
+    // $.mobile.changePage("#NotChallengeMissionListPage");
     $('#NotChallengeMissionListView').listview('refresh');
 };
 
@@ -178,6 +178,10 @@ $(function() {
     
     //20130205 tmt
     $('#ChallengeBtn').click( onClickChallengeBtn );
+
+    //20130220 tmt for test
+    $('#slidetest').click( onShowNotChallengeMissionListPages );
+
 
     $("#okDialog_challenge").click(function(event)
         {
