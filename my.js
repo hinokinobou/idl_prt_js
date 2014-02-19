@@ -180,7 +180,7 @@ $(function() {
     $('#ChallengeBtn').click( onClickChallengeBtn );
 
     //20130220 tmt for test
-    $('#slidetest').click( onShowNotChallengeMissionListPages );
+    // $('#slidetest').click( onShowNotChallengeMissionListPages );
 
 
     $("#okDialog_challenge").click(function(event)
