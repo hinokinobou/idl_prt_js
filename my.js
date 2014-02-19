@@ -63,7 +63,7 @@ var onShowNotChallengeMissionListPages = function(){
     }
     
    
-    // $.mobile.changePage("#NotChallengeMissionListPage");
+    $.mobile.changePage("#NotChallengeMissionListPage");
     $('#NotChallengeMissionListView').listview('refresh');
 };
 
