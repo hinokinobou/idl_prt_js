@@ -13,7 +13,7 @@ var debug = function( msg ){
 
 /**
  * 未挑戦ミッション一覧取得
- */ 
+ */
 var getNotChellengeMissionList = function( ){
 
     return debug_not_challenge_mission_list;
@@ -26,13 +26,13 @@ var getNotChellengeMissionList = function( ){
  */
 var getChallengedMissionList = function(){
     return debug_challenged_mission_list;
-}
+};
 
 
 
 /**
  * 挑戦済ミッションのログ取得
- */ 
+ */
 var getChallengedMissionLogList = function( mission_id ){
     mission_id = parseInt( mission_id );
     return debug_challenged_mission_log_list[ mission_id ];
@@ -179,10 +179,6 @@ $(function() {
     //20130205 tmt
     $('#ChallengeBtn').click( onClickChallengeBtn );
 
-    //20130220 tmt for test
-    // $('#slidetest').click( onShowNotChallengeMissionListPages );
-
-
     $("#okDialog_challenge").click(function(event)
         {
             // $('#ChallengedMissionListView').append('<li>' + mission_name + '</li>');
@@ -207,12 +203,12 @@ $(function() {
             
             CCanvasManager.getInstance().setCanvas('world');
             CTaskManager.getInstance().start();
-        	new CBackgroundImageTask();
-        	
-        	for ( var i=0; i<100; i++ )
-        	{
-        		new CIdolTask();
-        	}
+            new CBackgroundImageTask();
+
+            for ( var i=0; i<100; i++ )
+            {
+                new CIdolTask();
+            }
         }
         
         // 20140217 $("#idol").click　の外に移動
