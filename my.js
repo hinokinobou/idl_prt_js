@@ -51,8 +51,6 @@ var onShowNotChallengeMissionListPages = function(){
     // 未挑済ミッションのリスト
     var not_challenge_mission_list = getNotChellengeMissionList();
 
-    alert('onShowNotChallengeMissionListPages!!');
-    
     $('#NotChallengeMissionListView').empty();
     var mission_id;
     var mission_name;
@@ -67,8 +65,6 @@ var onShowNotChallengeMissionListPages = function(){
    
     $.mobile.changePage("#NotChallengeMissionListPage");
     $('#NotChallengeMissionListView').listview('refresh');
-
-    alert('onShowNotChallengeMissionListPages end!!');
     
 };
 
