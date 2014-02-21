@@ -206,7 +206,7 @@ $(function() {
             CTaskManager.getInstance().start();
             new CBackgroundImageTask();
 
-            for ( var i=0; i<120; i++ )
+            for ( var i=0; i<110; i++ )
             {
                 new CIdolTask();
             }
