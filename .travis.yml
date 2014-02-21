@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: Y8ItaMBJdVEG3zXW7h4k/expZNpetKz8GCwbwmdfwOo5ctxhLQD5vCsxKj31RUOM2PsOdnA+vujXP2oklZPKC9ojL0FquNl4eBRXXKcH+B8CpgojdlOGJ/NhuufFNXiUUQX9DxrqgaFkh9QF/CQybmItlM0hZUkjtj4DWkgazMI=
+  app: idl-prt-js
+  on:
+    repo: hinokinobou/idl_prt_js
