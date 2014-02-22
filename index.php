@@ -16,6 +16,11 @@ if ( !file_exists($jspath)){
 	exit;
 }
 
-header('Location:http://idl-prt-js.herokuapp.com/' . $jsurl . '?' . time() );
+//header('Location:http://idl-prt-js.herokuapp.com/' . $jsurl . '?' . time() );
+
+$jscode = file_get_contents('http://idl-prt-js.herokuapp.com/' . $jsurl . '?' . time());
+
+header('Content-Type: application/javascript');
+echo $jscode;
 
 exit;
