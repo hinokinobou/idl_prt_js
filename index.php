@@ -3,6 +3,7 @@
 
 $jsurl = $_GET['jsurl'];
 
+$jsurl = basename($jsurl);
 
 if ( !preg_match('/^[a-z0-9_\-]+.js$/', $jsurl) ){
 	echo 'Hello World!';
