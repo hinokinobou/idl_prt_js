@@ -173,8 +173,8 @@ var onClickChallengeBtn = function( event, ui ){
 
 $(function() {
     
-    alert('testtest01');
-    
+    alert('testtest02');
+
     //イベントの割付
     debug('イベントの割付');
     
