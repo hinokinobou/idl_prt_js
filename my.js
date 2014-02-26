@@ -200,15 +200,21 @@ $(function() {
         if ( isFirst )
         {
             isFirst = false;
-            
-            CCanvasManager.getInstance().setCanvas('world');
-            CTaskManager.getInstance().start();
-            new CBackgroundImageTask();
 
-            for ( var i=0; i<110; i++ )
-            {
-                new CIdolTask();
-            }
+//            for ( var i=0; i<110; i++ )
+//            {
+//                new CIdolTask();
+//            }
+			$('#IdolDetail').live("pageinit", function(){
+				new CBackgroundImageTask();
+				CCanvasManager.getInstance().setCanvas('world');
+				CTaskManager.getInstance().start();
+				
+				for ( var i=0; i<110; i++ )
+				{
+					new CIdolTask();
+				}
+			});
         }
         
         // 20140217 $("#idol").click　の外に移動

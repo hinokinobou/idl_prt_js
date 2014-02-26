@@ -17,8 +17,6 @@ function CBackgroundImageTask()
 	
 };(function() {
 
-	dp("CBackgroundImageTask 定義");
-
 	/*==============================================
 		継承
 	*///============================================
@@ -53,14 +51,12 @@ function CBackgroundImageTask()
 				{
 					// this._w = this._img.getWidth();
 					// this._h	= this._img.getHeight();
-                    var canvas = CCanvasManager.getInstance().getCanvas();
-                    this._w = canvas.width;
-    				this._h = canvas.height;
+					var canvas = CCanvasManager.getInstance().getCanvas();
+					this._w = canvas.width;
+					this._h = canvas.height;
 					this.setMode(this.LOCAL_MODE_MAIN);
 				}
-				else
-				{
-				}
+
 			} break;
 			
 			case this.LOCAL_MODE_MAIN: {
