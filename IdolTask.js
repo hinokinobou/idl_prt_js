@@ -17,6 +17,9 @@ function CIdolTask()
 	this._mx = (Math.floor(Math.random()*5+1)+5) * ( Math.floor(Math.random()*2+1)%2 ? -1 : 1 );
 	this._my = 10;
 	
+	var canvas = CCanvasManager.getInstance().getCanvas();
+	this._floor = Math.floor(Math.random()*200+1)+canvas.height-200;
+	
 };(function() {
 
 	/*==============================================
@@ -103,15 +106,16 @@ function CIdolTask()
 		
 		this._y += this._my;
 		
-		if ( this._y > height-100 )
+		if ( this._y > this._floor )
 		{
-			this._y = height-100;
+			this._y = this._floor;
 			
 			this._x += this._mx;
 			if ( this._x > width || this._x < 0 ){
 				this._x = Math.floor(Math.random()*canvas.width+1);
 				this._mx = (Math.floor(Math.random()*5+1)+5) * ( Math.floor(Math.random()*2+1)%2 ? -1 : 1 );
 				this._y = 0;
+				this._floor = Math.floor(Math.random()*200+1)+canvas.height-200;
 			}
 		}
 	}
