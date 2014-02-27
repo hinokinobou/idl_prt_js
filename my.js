@@ -135,8 +135,10 @@ var onShowChallengedMissionLogListPages = function( mission_id ){
     
     
     
-    $.mobile.changePage("#ChallengedMissionLogListPage");
+    // $.mobile.changePage("#ChallengedMissionLogListPage");
     $('#ChallengedMissionLogListView').listview('refresh');
+
+    return true;
 };
 
 
@@ -274,7 +276,11 @@ $(function() {
         debug( mission_id );
         debug( mission_name );
          
-        $('#ChallengedMissionListView').append('<li><a href="javascript:onShowChallengedMissionLogListPages(' + mission_id + ');" class="show">' + mission_name + '</a></li>');
+        // $('#ChallengedMissionListView').append('<li><a href="javascript:onShowChallengedMissionLogListPages(' + mission_id + ');" class="show">' + mission_name + '</a></li>');
+    
+        $('#ChallengedMissionListView').append('<li><a href="#ChallengedMissionLogListPage" class="show" onclick="onShowChallengedMissionLogListPages(' + mission_id + ');" data-transition="slide">' + mission_name + '</a></li>');
+    
+
     }
     
     
