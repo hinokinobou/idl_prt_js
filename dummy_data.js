@@ -9,19 +9,22 @@
 var debug_not_challenge_mission_list = [
     
     {
-        'mission_id' : 4,
-        'mission_name': '武道館でライブ'
+        'mission_id' : 6,
+        'mission_name': '世界１１カ国ツアー'
     },
+    
     
     {
         'mission_id' : 5,
         'mission_name': '全国ドームツアー'
     },
-    
+
     {
-        'mission_id' : 6,
-        'mission_name': '世界１１カ国ツアー'
+        'mission_id' : 4,
+        'mission_name': '武道館でライブ'
     },
+    
+
 ];
 
 
