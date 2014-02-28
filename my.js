@@ -178,6 +178,10 @@ $(function() {
     //イベントの割付
     debug('イベントの割付');
     
+    //デフォルトのページ遷移演出
+    $.mobile.defaultDialogTransition = 'slide';
+
+
     //20130205 tmt
     $('#ChallengeBtn').click( onClickChallengeBtn );
 
