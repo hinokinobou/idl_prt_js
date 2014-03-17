@@ -260,9 +260,8 @@ $(function() {
         // cf) http://webtech-walker.com/archive/2012/09/event_handler_return_false.html
         return false;
     });
-    // 20140217 tmt add
-        
-        
+    // 20140217 tmt add!!
+    
     ////////
     // 挑戦済ミッションのリスト
     var challenged_mission_list = getChallengedMissionList();
@@ -284,7 +283,6 @@ $(function() {
     
         $('#ChallengedMissionListView').append('<li><a href="#ChallengedMissionLogListPage" class="show" onclick="onShowChallengedMissionLogListPages(' + mission_id + ');" data-transition="slide">' + mission_name + '</a></li>');
     
-
     }
     
     
